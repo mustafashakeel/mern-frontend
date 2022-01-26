@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.card-container{
+  background-color: #282c34;
+  color:aliceblue;
+  border: #61dafb 2px solid;
+  margin:20px;
+  padding:15px;
+}

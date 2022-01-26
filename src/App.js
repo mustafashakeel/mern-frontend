@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ShowBookList from './components/ShowBookList';
 import CreateBook from './components/CreateBook';
+import ShowBookDetails from './components/ShowBookDetails';
 
 class App extends Component {
 
@@ -13,8 +14,8 @@ class App extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ShowBookList />}>
-
-
+          </Route>
+          <Route path="/show-book/:id" element={<ShowBookDetails />}>
           </Route>
 
         </Routes>
