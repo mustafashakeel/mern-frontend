@@ -10,7 +10,7 @@ class ShowBookDetails extends Component {
         };
     }
     componentDidMount() {
-        console.log(" print ID ", this.props.location)
+        console.log(" print ID ", this.props);
         axios.get('http://localhost:8080/api/books').then((res) => {
 
             console.log(" res", res.data);

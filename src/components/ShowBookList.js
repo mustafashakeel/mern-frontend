@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import BookCard from './BookCard';
+import { Link } from 'react-router-dom';
 class ShowBookList extends Component {
     constructor(props) {
         super(props);
@@ -36,6 +37,12 @@ class ShowBookList extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <h2 className="text-center display-4">Books List</h2>
+                        </div>
+
+                    </div>
+                    <div className="row">
+                        <div className="col-md-10">
+                            <Link to="/create-book" className="btn btn-outline-warning m-3"> Add Books</Link>
                         </div>
 
                     </div>
