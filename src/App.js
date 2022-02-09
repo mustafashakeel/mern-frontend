@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ShowBookList from './components/ShowBookList';
 import CreateBook from './components/CreateBook';
 import ShowBookDetails from './components/ShowBookDetails';
+import UpdateBookInfo from './components/UpdateBookInfo';
+
 
 class App extends Component {
 
@@ -13,13 +15,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ShowBookList />}>
+          <Route exact path="/" element={<ShowBookList />}>
           </Route>
-          <Route path="/create-book" element={<CreateBook />}>
+          <Route path='/create-book' element={<CreateBook />}>
           </Route>
-          <Route path="/show-book/:id" element={<ShowBookDetails />}>
+          <Route path='/show-book/:id' element={<ShowBookDetails />}>
           </Route>
-
+          <Route path='/edit-book/:id' element={<UpdateBookInfo />}>
+          </Route>
         </Routes>
       </BrowserRouter>
 
